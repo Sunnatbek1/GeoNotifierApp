@@ -1,41 +1,70 @@
 {
   "project_info": {
-    "project_number": "1059648005226",
-    "project_id": "locationreminder-98f3e",
-    "storage_bucket": "locationreminder-98f3e.appspot.com"
+    "project_number": "881216557093",
+    "project_id": "locationbasedreminder-612c2",
+    "storage_bucket": "locationbasedreminder-612c2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1059648005226:android:f747a0cf75829ce6321613",
+        "mobilesdk_app_id": "1:881216557093:android:c77e9db3df91eb99a9afcc",
         "android_client_info": {
-          "package_name": "com.mertcansegmen.locationbasedreminder"
+          "package_name": "com.company.geonotifier"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1059648005226-l757qdufodthp8p7gu3bbeja3dmnsrbp.apps.googleusercontent.com",
+          "client_id": "881216557093-sg838qg8lr3i08utvo4kjho2aj51u3on.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.mertcansegmen.locationbasedreminder",
-            "certificate_hash": "124dd6e0c0d5293678d3a6e404911859c8d4fa3a"
+            "package_name": "com.company.geonotifier",
+            "certificate_hash": "1832e21f51689cb43393497fe69fb83b7518d1d5"
           }
         },
         {
-          "client_id": "1059648005226-jo6nknv592n4qm99leb5r653bo2r7ghj.apps.googleusercontent.com",
+          "client_id": "881216557093-v93vimgtq9r4uku24s2d1051dg1aeab4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB2ak1R1sOhz6n-WMc8izqGfkbC6b16UHs"
+          "current_key": "AIzaSyDfmf7kQFwIaWZDRVvmekoHgOziOyWBx5M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1059648005226-jo6nknv592n4qm99leb5r653bo2r7ghj.apps.googleusercontent.com",
+              "client_id": "881216557093-v93vimgtq9r4uku24s2d1051dg1aeab4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881216557093:android:c02a6bb51c4733d9a9afcc",
+        "android_client_info": {
+          "package_name": "com.mertcansegmen.locationbasedreminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881216557093-v93vimgtq9r4uku24s2d1051dg1aeab4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfmf7kQFwIaWZDRVvmekoHgOziOyWBx5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881216557093-v93vimgtq9r4uku24s2d1051dg1aeab4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
