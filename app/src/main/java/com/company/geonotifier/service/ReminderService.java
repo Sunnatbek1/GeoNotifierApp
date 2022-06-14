@@ -25,6 +25,7 @@ import com.company.geonotifier.model.Place;
 import com.company.geonotifier.model.ReminderWithNotePlacePlaceGroup;
 import com.company.geonotifier.repository.ReminderRepository;
 import com.company.geonotifier.ui.MainActivity;
+import com.google.android.gms.location.LocationRequest;
 
 import java.util.List;
 import java.util.concurrent.Executor;
@@ -39,6 +40,7 @@ public class ReminderService extends Service implements LocationListener {
     public static final String ACTION_RESET = "com.company.geonotifier.ACTION_RESET";
     public static final String EXTRA_REMINDER_ID = "com.company.geonotifier.EXTRA_REMINDER_ID";
 
+    private final String LOCATION_REQUEST = "com.company.geonotifier.location";
     private static final int REQUEST_CODE_MAIN_ACTIVITY = 999999;
     private static final int NOTIFICATION_ID_FOREGROUND = 999999;
 
@@ -202,6 +204,13 @@ public class ReminderService extends Service implements LocationListener {
         return PendingIntent.getActivity(this, REQUEST_CODE_MAIN_ACTIVITY, mainActivityIntent, 0);
     }
 
+    private void createLocationRequest() {
+        LocationRequest locationRequest = LocationRequest.create();
+        locationRequest.setInterval(10000);
+        locationRequest.setFastestInterval(5000);
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+    }
+
 
     private Location placeToLocation(Place place) {
         Location location = new Location(place.getName());
@@ -212,7 +221,9 @@ public class ReminderService extends Service implements LocationListener {
 
     @Override
     public void onStatusChanged(String provider, int status, Bundle extras) {
-
+        if (provider.equals(LOCATION_REQUEST)){
+            createLocationRequest();
+        }
     }
 
     @Override
